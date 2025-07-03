@@ -1,0 +1,80 @@
+$backgroundColor: #010114;
+$backgroundColorNav: #111;
+$textColor: #e0dcdc;
+$textColorHover: #00bfff;
+$fontFamily: "Rubik", "Arial", sans-serif;
+
+:root{
+  font-size: 16px;
+}
+
+header {
+  background-color: $backgroundColorNav; 
+  padding: 10px 20px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+
+    .logo{
+      height: 50px;
+      margin-right: auto;
+    }
+
+    a {
+      color: $textColor;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+       color: $textColorHover;
+    }
+
+  }
+  
+}
+
+body{
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-family: $fontFamily;
+    
+}
+
+.card_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+  
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  p{
+    color: $backgroundColor;
+  }
+  
+}
+
+a {
+  color: $textColor;
+}
+
+
