@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tus coleccionables favoritos a los mejores precios">
+    <meta property="og:title" content="Doctor Who, science fiction since 1963" />
+    <meta property="og:image" content="../img/Taza Tardis.webp" />
+    <meta property="og:image:alt" content="Taza coleccionable Doctor Who" />
+    <meta property="og:description" content="Encuentra tus coleccionables favoritos a los mejores precios" />
+    <meta property="og:url" content="www.doctorwho-hub.com/tienda" />
+    <!--Rubik-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Tienda Who, encuentra tus coleccionables favoritos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" > 
+                <img src="../img/Doctor Who Logo Blanco.png" class="logo" ></img>
+            </a>
+            <a href="tienda/tienda.html">Tienda</a>
+            <a href="#">Torchwood</a>
+            <a href="#">Totally Doctor Who</a>
+            <a href="#">The Sarah Jane Adventures</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <div>
+                        <label for="name">Nombre</label>                        >
+                        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                    </div>
+                </fieldset> 
+                <fieldset>
+                    <legend>Información de producto</legend>
+                        <label for="product-selection">Selecciona tu producto:</label>
+                        <select name="producto" id="product-selection">
+                            <!--disabled selected hacen que la opcion de selecciona no se pueda tomar del desplegable-->
+                            <option value="" disabled selected>--Selecciona tu producto--</option>
+                            <option value="taza">Taza</option>
+                            <option value="playera">Playera</option>
+                            <option value="funko">Funko</option>
+                            <option value="gorra">Gorra</option>
+                            <option value="mochila">Mochila</option>
+                            <option value="sticker">Sticker</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Información de entrega</legend>
+                        <!--lang-->
+                        <label for="delivery-date" lang="en">Choose a day for your package to be delivered:</label>
+                        <input type="datetime-local" id="delivery-date" name="delivery-date"/>
+                </fieldset>
+                <section class="form-privacy">
+                    <!--aquí tambíen cambié el required de html por el aria, pero creo que el primero es más completo porque menciona "invalid" en el lector cuando no esta seleccionado-->                 
+                    <input type="checkbox" role="checkbox" required>
+                    <label>He leído los Términos y Condiciones</label>
+                </section>
+                <!--Aqui era form en lugar de div, pero quería ver que hacía el lector de pantalla-->
+                <div>
+                    <input type="submit" value="Comprar" role="button" />
+                </div>
+            </section>
+        </article>
+    </main>    
+</body>
+</html>
